@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varun Patel</title>
+  <meta name="description" content="Varun Patel — embedded systems and AI-integrated hardware. Engineering physics, Queen's '25.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+
+    <section id="intro">
+      <h1>Varun Patel</h1>
+      <p>Engineering physics (electrical), Queen's University 2025 grad. I build embedded systems and AI-integrated hardware. Currently looking for full-time work.</p>
+
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Mira — Real-time AI application on embedded Linux</h3>
+        <p>A consumer hardware product with a fully local voice assistant pipeline. Collaboration with a senior electrical engineer.</p>
+        <ul>
+          <li>Designed and implemented a multilingual real-time voice-pipeline on embedded Linux, integrating Silero VAD, whisper.cpp (STT), llama.cpp (LLM inference), and Kokoro TTS with both fully local and cloud-backed variants.</li>
+          <li>Achieved ~2-second end-to-end latency for the local pipeline on Raspberry Pi CM5 by selecting and configuring lightweight C/C++ inference runtimes under tight memory and compute constraints.</li>
+          <li>Profiled and optimized pipeline performance through iterative benchmarking, managing concurrency and audio data flow across multiple ML model stages.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <h3>ESP32 Smart Alarm</h3>
+        <p>Smart alarm system that drives an actuator to open my window when the alarm is triggered. Time is synchronized with NTP servers and alarm can be changed remotely via MQTT.</p>
+        <ul>
+          <li>Designed and implemented embedded firmware on ESP32-S2 using FreeRTOS, developing low-level drivers, task scheduling, and power-efficient deep sleep modes in ESP-IDF.</li>
+          <li>Integrated networking, RTC persistence, and NTP synchronization, validating reliable system operation across power cycles and offline conditions.</li>
+          <li>Designed and tested electromechanical actuation using a stepper motor and custom 3D-printed mechanism, debugging timing and control issues across hardware and firmware.</li>
+        </ul>
+        <p>
+          <a href="https://github.com/vsatbat/esp32-smart-alarm">GitHub</a> | 
+          <a href="https://www.youtube.com/watch?v=D9zys-8dyBM">YouTube Demo</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Projected Touch Display</h3>
+        <p>Queen's Engineering Physics capstone project, team of four.</p>
+        <ul>
+          <li>Built a projected touch interface using stereo USB cameras and Python, integrating computer vision models with real-time system constraints.</li>
+          <li>Achieved &lt;1 mm positional uncertainty and 35 ms end-to-end latency through calibration, profiling, and iterative optimization.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I studied engineering physics at Queen's (electrical option), graduating in 2025. I'm drawn to work that sits at the boundary between hardware and software, including embedded systems, signal processing, and challenging areas where abstractions break down. Most of what I've built has been hands-on: firmware on Arduino in a physics lab, a C++ UI for a precision instrument at Guildline, and now Mira, a consumer hardware product with a fully local voice pipeline.</p>
+
+      <p>A longer thread running through my interests is how humans and machines can interface. Things like BCIs, prosthetic control, neural signals, feedback loops between a person and a device. It's part of why I ended up in engineering physics rather than pure EE or CS: I wanted the physics and the electronics and the software all in one place.</p>
+
+      <p>Outside of engineering, I'm usually with my family, playing basketball, lifting, or cooking.</p>
+
+      <!-- TODO: paragraph 4 — what you want in a team / environment. Small-company / startup culture fit. -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:varun.p2202@gmail.com">varun.p2202@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/varunmpatel">linkedin.com/in/varunmpatel</a></li>
+        <li>GitHub: <a href="https://github.com/vsatbat">github.com/vsatbat</a></li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
