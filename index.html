@@ -20,11 +20,11 @@
       <h2>Projects</h2>
 
       <article class="project">
-        <h3>Mira — Real-time AI application on embedded Linux</h3>
+        <h3>Mira: Real-time AI application on embedded Linux</h3>
         <p>A consumer hardware product with a fully local voice assistant pipeline. Collaboration with a senior electrical engineer.</p>
         <ul>
-          <li>Designed and implemented a multilingual real-time voice-pipeline on embedded Linux, integrating Silero VAD, whisper.cpp (STT), llama.cpp (LLM inference), and Kokoro TTS with both fully local and cloud-backed variants.</li>
-          <li>Achieved ~2-second end-to-end latency for the local pipeline on Raspberry Pi CM5 by selecting and configuring lightweight C/C++ inference runtimes under tight memory and compute constraints.</li>
+          <li>Designed and implemented a multilingual real-time voice-pipeline on embedded Linux, integrating voice activity detection, speech-to-text, large-language, and text-to-speech models with both fully local and cloud-backed variants.</li>
+          <li>Achieved ~3-second end-to-end latency for the local pipeline on Raspberry Pi CM5 by selecting and configuring lightweight C/C++ inference runtimes under tight memory and compute constraints.</li>
           <li>Profiled and optimized pipeline performance through iterative benchmarking, managing concurrency and audio data flow across multiple ML model stages.</li>
         </ul>
       </article>
